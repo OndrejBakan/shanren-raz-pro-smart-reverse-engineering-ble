@@ -17,7 +17,7 @@ UUID for reading: 6E400003-B5A3-F393-E0A9-E50E24DCCA9E
 ```
 
 ### All settings at once
-Write to 0x0011:
+Request:
 ```
 0x31 0B 00
 ```
@@ -85,6 +85,18 @@ Reply:
          \  \___________________________ packet count
           \_____________________________ mode
 ```
+
+### Restore Factory Setting
+Request:
+```
+0x31 07 01
+```
+
+Reply:
+```
+0x31 07 01 00
+```
+
 ### Sleep timeout
 ```
 0x31 09 01 0000
